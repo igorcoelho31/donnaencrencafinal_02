@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" color="success" class="ion-text-center" style="font-family: 'Inter', sans-serif;">
+  
+  <div style="height: 180px; background-color: #FBFFF1;">
+    <img src="https://i.imgur.com/t6QBDUo.png"
+      style="margin-top: -50px; width: 330px; position: relative; z-index: 2;">
+    </div>     
+    <div class="container">
+      <svg viewBox="0 0 500 500"  preserveAspectRatio="xMinYMin meet" >
+        <path id="wave" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill: #FBFFF1;"></path>
+      </svg>
+    </div>
+  
+
+  <form #formdadosfunc="ngForm" (ngSubmit)="dadosfunc(formdadosfunc)">
+  <div class="texto" style="width: 100%; padding-right: 10%; padding-left: 10% ">
+  <h1 style="margin-top: -250px;">Comece já os trabalhos</h1>
+  <p style="color: #fff;">Adicione o restante dos seus dados para começar a trabalhar já!</p>
+
+  <ion-item color="success" class="linha" >
+    <ion-input fill="solid" placeholder="Cidade" type="text" name="nome_localidade" required ngModel></ion-input>
+  </ion-item>
+  
+  <ion-item color="success" style="margin-bottom: 1vh; position: relative; top: 1.5vh; right: 1vh;">
+    <ion-input fill="solid" placeholder="Profissão" type="text" name="nome_profissao" required ngModel></ion-input>
+  </ion-item>
+
+
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12" class="ion-text-center">
+      <ion-button type="submit" fill="outline" class="botao" color="light" routerLink="/cadastro-um"> Cadastre-se</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</form>
+</ion-content>
